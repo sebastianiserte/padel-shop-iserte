@@ -1,13 +1,21 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
 import NavBar from './Components/NavBar';
 import ItemListContainer from './Components/ItemListContainer';
+import ItemCount from './Components/ItemCount';
 
 function App() {
   return (
     <div className="App">
       <NavBar/>
-      <ItemListContainer/>
+
+      <ItemListContainer>
+        <ItemCount stock={5} initial={1} onAdd={(ant)=>ant+1} onSubst={(ant)=>ant-1}/>
+      </ItemListContainer>
+
+
+
+
       {/*<header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
