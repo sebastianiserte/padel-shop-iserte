@@ -15,8 +15,8 @@ function ItemCount({stock, initial, onAdd,onSubst}) {
     }
 
   return (
-    <div className="border-2 border-solid w-1/4">
-        <h1>ItemCount (max {stock})</h1> 
+    <div className="border-2 border-solid">
+        <h1>{stock} disponibles</h1> 
         <div className="flex justify-between self-center border-2 border-solid border-cyan-600">
             <button className={btn} onClick={restar}>-</button>
             <p className={total}>{sum}</p>

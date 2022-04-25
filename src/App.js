@@ -3,6 +3,7 @@ import './App.css';
 import NavBar from './Components/NavBar';
 import ItemListContainer from './Components/ItemListContainer';
 import ItemCount from './Components/ItemCount';
+import ItemList from './Components/ItemList';
 
 function App() {
   return (
@@ -10,7 +11,8 @@ function App() {
       <NavBar/>
 
       <ItemListContainer>
-        <ItemCount stock={5} initial={1} onAdd={(ant)=>ant+1} onSubst={(ant)=>ant-1}/>
+        {/*<ItemCount stock={5} initial={1} onAdd={(ant)=>ant+1} onSubst={(ant)=>ant-1}/>*/}
+       
       </ItemListContainer>
 
 
