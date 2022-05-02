@@ -2,8 +2,8 @@ import { useState } from "react"
 
 function ItemCount({stock, initial, onAdd}) {
 
-    const btn = "btn w-12 text-3xl font-bold text-white  border-2 border-solid border-accent rounded-sm";
-    const total = "flex self-center h-full";
+    const btn = "btn btn-sm	btn-square text-xl items-start";
+    const total = "flex self-center border-2 border-solid mx-2 px-2";
     const [sum,setSum] = useState(initial);
 
     const sumar = () => {
@@ -17,7 +17,7 @@ function ItemCount({stock, initial, onAdd}) {
   return (
     <div >
         <h1 className="border-y-2 border-solid bg-slate-800 text-white">{stock} disponibles</h1> 
-        <div className="flex justify-between self-center px-24">
+        <div className="flex justify-center items-center mt-2">
             <button className={btn} onClick={restar}>-</button>
             <p className={total}>{sum}</p>
             <button className={btn} onClick={sumar} >+</button>

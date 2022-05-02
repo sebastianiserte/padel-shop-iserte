@@ -1,0 +1,94 @@
+
+[
+    {
+        "id": "0",
+        "title": "Producto1",
+        "description": "D3scripcion1",
+        "price": "100",
+        "pictureUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Siux_grafeno.jpg",
+        "stock": "5",
+        "detalle":"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga."
+    },
+    {
+        "id": "1",
+        "title": "Producto2",
+        "description": "Descripcion2",
+        "price": "100",
+        "pictureUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Siux_grafeno.jpg",
+        "stock": "4",
+        "detalle":"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga."
+
+    },
+    {
+        "id": "2",
+        "title": "Producto3",
+        "description": "D3scripcion3",
+        "price": "150",
+        "pictureUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Siux_grafeno.jpg",
+        "stock": "2",
+        "detalle":"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga."
+
+    },
+    {
+        "id": "3",
+        "title": "Producto4",
+        "description": "D3scripcion4",
+        "price": "200",
+        "pictureUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Siux_grafeno.jpg",
+        "stock": "1",
+        "detalle":"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga."
+
+    },
+    {
+        "id": "4",
+        "title": "Producto5",
+        "description": "D3scripcion5",
+        "price": "120",
+        "pictureUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Siux_grafeno.jpg",
+        "stock": "2",
+        "detalle":"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga."
+
+    },
+    {
+        "id": "5",
+        "title": "Producto6",
+        "description": "D3scripcion6",
+        "price": "100",
+        "pictureUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Siux_grafeno.jpg",
+        "stock": "10",
+        "detalle":"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga."
+
+    },
+    {
+        "id": "6",
+        "title": "Producto7",
+        "description": "D3scripcion7",
+        "price": "300",
+        "pictureUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Siux_grafeno.jpg",
+        "stock": "1",
+        "detalle":"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga."
+
+    },
+    {
+        "id": "7",
+        "title": "Producto8",
+        "description": "D3scripcion8",
+        "price": "140",
+        "pictureUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Siux_grafeno.jpg",
+        "stock": "3",
+        "detalle":"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga."
+
+    },
+    {
+        "id": "8",
+        "title": "Producto9",
+        "description": "D3scripcion9",
+        "price": "120",
+        "pictureUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Siux_grafeno.jpg",
+        "stock": "6",
+        "detalle":"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga."
+
+    }
+]
+
+
