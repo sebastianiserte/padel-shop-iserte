@@ -23,7 +23,7 @@ function ItemDetailContainer({itemId}) {
     });
     
     getItem.then(res=>{
-      setData(res.find((i) => {i.id === itemId}));
+      setData(res.find((i) => i.id === itemId));
     });
     
   },[]);
