@@ -76,4 +76,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 Sitio tipo eCommerce de articulos relacionados con el deporte Padel.
 Algunas categorias que se manejaran seran Palas(requteas), zapatillas y accesorios (grips, pelotas y otros articulos necesarios para el deporte)
 
-Se instalo Tailwind.css y Daisy UI para facilitar/mejorar el diseño.
+Se instaló Tailwind.css y DaisyUI para facilitar/mejorar el diseño.
+Se instaló react-spinners para los loaders
