@@ -1,53 +1,53 @@
-
 [
     {
         "id": "0",
         "title": "Producto1",
         "description": "D3scripcion1",
         "price": "100",
-        "pictureUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Siux_grafeno.jpg",
+        "pictureUrl": "https://100x100padel.es/5554/pala-padel-head-graphene-360-alpha-motion-2021.jpg",
         "stock": "5",
-        "detalle":"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga."
+        "detalle": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.",
+        "categoria": "palas"
     },
     {
         "id": "1",
         "title": "Producto2",
         "description": "Descripcion2",
         "price": "100",
-        "pictureUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Siux_grafeno.jpg",
+        "pictureUrl": "https://contents.mediadecathlon.com/p1898418/k$eb126917b7c59fbb40368a64c7118e4f/zapatillas-de-padel-ps-990d-m-azul.jpg?&f=800x800",
         "stock": "4",
-        "detalle":"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga."
-
+        "detalle": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.",
+        "categoria": "zapatillas"
     },
     {
         "id": "2",
         "title": "Producto3",
         "description": "D3scripcion3",
         "price": "150",
-        "pictureUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Siux_grafeno.jpg",
+        "pictureUrl": "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1638641411-41-7m4GzC8L._SL500_.jpg?crop=1xw:1xh;center,top&resize=480%3A%2A",
         "stock": "2",
-        "detalle":"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga."
-
+        "detalle": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.",
+        "categoria": "palas"
     },
     {
         "id": "3",
         "title": "Producto4",
         "description": "D3scripcion4",
         "price": "200",
-        "pictureUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Siux_grafeno.jpg",
+        "pictureUrl": "https://100x100padel.es/6303-large_default/pala-padel-bullpadel-flow-woman-22.jpg",
         "stock": "1",
-        "detalle":"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga."
-
+        "detalle": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.",
+        "categoria": "palas"
     },
     {
         "id": "4",
         "title": "Producto5",
         "description": "D3scripcion5",
         "price": "120",
-        "pictureUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Siux_grafeno.jpg",
+        "pictureUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3cE5F7nMNuJkg-9Ayq1skJxFa7kj1N-Rl2A&usqp=CAU",
         "stock": "2",
-        "detalle":"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga."
-
+        "detalle": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.",
+        "categoria": "accesorios"
     },
     {
         "id": "5",
@@ -56,39 +56,37 @@
         "price": "100",
         "pictureUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Siux_grafeno.jpg",
         "stock": "10",
-        "detalle":"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga."
-
+        "detalle": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.",
+        "categoria": "palas"
     },
     {
         "id": "6",
         "title": "Producto7",
         "description": "D3scripcion7",
         "price": "300",
-        "pictureUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Siux_grafeno.jpg",
+        "pictureUrl": "https://m.media-amazon.com/images/I/71ZW0aT8VKL._AC_SY679_.jpg",
         "stock": "1",
-        "detalle":"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga."
-
+        "detalle": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.",
+        "categoria": "accesorios"
     },
     {
         "id": "7",
         "title": "Producto8",
         "description": "D3scripcion8",
         "price": "140",
-        "pictureUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Siux_grafeno.jpg",
+        "pictureUrl": "https://www.paddelea.com/archivos/202101/head-revolt-pro-3.0-sanyo-caracteristicas-300x300x80xX.jpg?1",
         "stock": "3",
-        "detalle":"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga."
-
+        "detalle": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.",
+        "categoria": "zapatillas"
     },
     {
         "id": "8",
         "title": "Producto9",
         "description": "D3scripcion9",
         "price": "120",
-        "pictureUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Siux_grafeno.jpg",
+        "pictureUrl": "https://walashop.a.ssl.fastly.net/media/catalog/product/cache/9653284e54456fe97f4261e085b9d584/1/0/1041a193-102.jpg",
         "stock": "6",
-        "detalle":"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga."
-
+        "detalle": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.",
+        "categoria": "zapatillas"
     }
 ]
-
-

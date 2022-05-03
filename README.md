@@ -68,3 +68,12 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+
+### Descripción y Obsevaciones
+Sitio tipo eCommerce de articulos relacionados con el deporte Padel.
+Algunas categorias que se manejaran seran Palas(requteas), zapatillas y accesorios (grips, pelotas y otros articulos necesarios para el deporte)
+
+Se instalo Tailwind.css y Daisy UI para facilitar/mejorar el diseño.
