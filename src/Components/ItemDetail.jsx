@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { CartContext } from "../Context/CartContext";
 import ButtonToPage from "./ButtonToPage";
 import ItemCount from "./ItemCount";
 
@@ -7,6 +8,7 @@ import ItemCount from "./ItemCount";
 
 function ItemDetail({detail}) {
 
+  const {addToCart} = useContext(CartContext)
   const [visible, setVisible] = useState(true)
   const [cantidad, setCantidad] = useState(0)
 
@@ -15,7 +17,8 @@ function ItemDetail({detail}) {
     //opcion 1(utilizada): utilizar el estado para indicar por props la visivilidad del componente
     //opcion 2: utilizar el estado en una condicion que indique cual componente utilizar.
     setVisible(false);
-    setCantidad(cant)
+    setCantidad(cant);
+    addToCart(detail,cant);
   }
 
   return (

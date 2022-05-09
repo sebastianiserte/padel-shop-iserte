@@ -1,11 +1,12 @@
-import { useState } from "react"
-import ButtonToPage from "./ButtonToPage";
+import {useState } from "react"
+
 
 function ItemCount({stock, initial, onAdd, visible}) {
 
     const btn = "btn btn-sm	btn-square text-xl items-start";
     const total = "flex self-center border-2 border-solid mx-2 px-2";
     const [sum,setSum] = useState(initial);
+
 
     const sumar = () => {
       if (sum<stock) {setSum(sum+1)};
