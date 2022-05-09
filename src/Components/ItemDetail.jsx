@@ -1,10 +1,21 @@
+import { useState } from "react";
+import ButtonToPage from "./ButtonToPage";
 import ItemCount from "./ItemCount";
+
+
+//const emptyComponent = () => ("");
 
 function ItemDetail({detail}) {
 
-  const onAddFunction = (cantidad) => {
+  const [visible, setVisible] = useState(true)
+  const [cantidad, setCantidad] = useState(0)
 
-    alert("Has comprado " + cantidad);
+  const onAddFunction = (cant) => {
+    alert("Has comprado " + cant);
+    //opcion 1(utilizada): utilizar el estado para indicar por props la visivilidad del componente
+    //opcion 2: utilizar el estado en una condicion que indique cual componente utilizar.
+    setVisible(false);
+    setCantidad(cant)
   }
 
   return (
@@ -17,7 +28,19 @@ function ItemDetail({detail}) {
               <h1 className="font-bold text-2xl mt-4 text-left">Item {detail.title}</h1> 
               <h2 className="font-bold text-4xl my-4 text-fuchsia-700 text-left">$ {detail.price}</h2>
               <p className="text-left my-8">{detail.detalle}</p>
-              <ItemCount stock={detail.stock} initial={1} onAdd={onAddFunction}/>
+
+              {/* //opc1 */}
+              <ItemCount stock={detail.stock} initial={1} onAdd={onAddFunction} visible={visible}/>
+              <p className={"text-left mx-2 bg-slate-300 p-2"+(!visible?" block":" hidden")}>{cantidad} items agregados al Carrito</p>
+              <ButtonToPage path="/cart" text="Terminar compra" visible={(!visible)}></ButtonToPage>
+
+
+              {/* //opc2 
+              quitar de los componentes itemCount y ButtonToPage la logica que evalua la prop visible.
+              {visible?<ItemCount stock={detail.stock} initial={1} onAdd={onAddFunction} />:<ButtonToPage path="/cart" text="Terminar compra" ></ButtonToPage>}
+              */}
+              
+             
             </div>
         </div>
     </div>

@@ -19,7 +19,7 @@ const menu = [
 const NavBar = () => {
   return (
     <div className='flex  items-center shadow-xl bg-slate-800'>
-      <div className='flex-none text-right w-1/6 font-medium text-5xl italic text-sky-500'>Padel Shop</div>
+      <div className='flex-none text-right w-1/6 font-medium text-5xl italic text-sky-500'><NavLink  to={menu.find(el=>el.name=="Inicio").ruta}>Padel Shop</NavLink></div>
       <nav className="w-full flex items-center justify-around min-h-[80px] ">
         <ul className="flex items-end justify-around min-h-[60px] text-white text-3xl " style={estilos}>
             {menu.map((m,i)=><li className='list-none mx-8'  key={i}><NavLink  to={m.ruta}  className={({ isActive }) => (isActive ? 'text-white' : 'text-slate-400')}>{m.name}</NavLink></li>)}
