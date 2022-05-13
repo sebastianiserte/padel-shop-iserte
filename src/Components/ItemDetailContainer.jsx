@@ -29,7 +29,7 @@ function ItemDetailContainer() {
 
     //Declaro el Promise con Async 2s
     const getItem = new Promise((res,rej)=>{
-      setTimeout(()=>res(BackEndData),2000);
+      setTimeout(()=>res(BackEndData),500);
     });
     
     //Resuelvo el Promise con estados nuevos

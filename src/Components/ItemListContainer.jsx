@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { GridLoader } from "react-spinners";
 import ItemList from "./ItemList";
+//import {collection, doc,getDoc,getDocs,getFirestore} from "firebase/firestore"
 
 
 function ItemListContainer({greeting}) {
@@ -42,7 +43,7 @@ function ItemListContainer({greeting}) {
 
     //Promise con Async
     const promise = new Promise((res,rej)=>{
-        setTimeout(()=>res(BackEndData),2000);
+        setTimeout(()=>res(BackEndData),500);
     });
 
     //Resuelvo el Promise con estados nuevos
@@ -51,8 +52,19 @@ function ItemListContainer({greeting}) {
       setLoading(false);
     });
 
-  },[id]);
+    // const db = getFirestore();
+    // const itemColection = collection(db,"items")
+    // getDocs(itemColection).then((snapshot)=>{
+        
+    //     setLoading(false);
+    //     setData(snapshot.docs.map((doc)=>({
+    //       id: doc.id, ...doc.data()
+    //     })))
+        
+    // })
 
+  },[id]);
+  
   return (
       <div className="w-10/12 mx-auto min-h-[72vh]">
         <h1 className="text-4xl my-8" >Hola {greeting}</h1>

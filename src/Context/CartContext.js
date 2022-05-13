@@ -13,8 +13,18 @@ import { createContext, useState } from "react"
     const isInCart = (id)=>cart.find((obj)=>obj.id===id);
     
     const addToCart =(obj,quantity)=>{
-        if (isInCart(obj.id)){
-            alert("El Item ya esta en el carrito");
+        
+        let item = isInCart(obj.id);
+
+        if (item ){
+            //ocj actual mas la cantidad del objeto que ya estaba
+            obj["cantidad"] = quantity + cart[cart.indexOf(item)].cantidad;
+            //Creo un nuevo carro filtrando el elemento viejo
+            const newCart = cart.filter((cartItem)=>cartItem!==item)
+            //agrego el elemeto actualizado
+            newCart.push(obj);
+            //hago el set del carrito actualizado.
+            setCart(newCart);             
         } else {
             obj["cantidad"]=quantity;
             setCart([...cart,obj]);
@@ -26,7 +36,7 @@ import { createContext, useState } from "react"
         console.log(isInCart(id));
 
         if (isInCart(id)){
-            const carrito = cart.filter((obj)=>obj.id!=id)
+            const carrito = cart.filter((obj)=>obj.id!==id)
             console.log("remove ", carrito);
             setCart(carrito);
         } else {

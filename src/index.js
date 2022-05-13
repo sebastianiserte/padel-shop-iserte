@@ -3,6 +3,22 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { initializeApp } from "firebase/app";
+// import { getAnalytics } from "firebase/analytics";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyBeDri7hluuFy5sB1i3NReAc4zqwcPy5xA",
+  authDomain: "padel-shop-coderhouse.firebaseapp.com",
+  projectId: "padel-shop-coderhouse",
+  storageBucket: "padel-shop-coderhouse.appspot.com",
+  messagingSenderId: "492040153085",
+  appId: "1:492040153085:web:637826193fb112b81ddb94",
+  measurementId: "G-0CG8554GDP"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+// const analytics = getAnalytics(app);
 
 ReactDOM.render(
   <React.StrictMode>
