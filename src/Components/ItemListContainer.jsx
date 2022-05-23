@@ -58,10 +58,16 @@ function ItemListContainer({greeting}) {
     getDocs(itemColection).then((snapshot)=>{
         
         // setLoading(false);
-        setData(snapshot.docs.map((doc)=>({
-          id: doc.id, ...doc.data()
-        })))
-        
+
+        //Si la categoria del producto es undefined:
+        //1. estoy en el inicio, entoces traigo todos los elementos diferentes de undefined
+        //2. sino estoy en una categoria y filtro po la categoria.
+        setData(snapshot.docs
+          .map((doc)=>({id: doc.id, ...doc.data()}))
+          .filter((item)=>{
+            return id!==undefined?item.categoria===id:item.categoria!==id
+          })
+        )
     })
 
   },[id]);

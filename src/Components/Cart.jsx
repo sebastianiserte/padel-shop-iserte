@@ -6,9 +6,7 @@ function Cart() {
 
   const {cart, removeFromCart,clear} = useContext(CartContext)
 
-  const total = cart.reduce((acum,item)=>
-      { console.log(cart)
-        return acum+Number(item.price*item.cantidad)},0)
+  const total = cart.reduce((acum,item)=>acum+Number(item.price*item.cantidad),0)
 
   return (
     <div className="max-w-[850px] mx-auto card-bordered border-accent rounded-xl p-4 shadow-xl m-8">
@@ -37,7 +35,7 @@ function Cart() {
           : (<div className="w-full text-right">
                 <div className="flex items-center justify-end">
                   <h2 className="text-2xl font-bold my-8">Total: $ {total}</h2>
-                  <ButtonToPage path="/" text="Pagar"></ButtonToPage>
+                  <ButtonToPage path="/pay" text="Pagar"></ButtonToPage>
                 </div>
                 <ButtonToPage path="/" text="seguir comprando"></ButtonToPage>
             <button className="btn " onClick={()=>clear()}>Borrar todos</button>

@@ -32,8 +32,8 @@ import { createContext, useState } from "react"
     }
 
     const removeFromCart =(id)=>{
-        console.log("removeFromCart", id);
-        console.log(isInCart(id));
+        // console.log("removeFromCart", id);
+        // console.log(isInCart(id));
 
         if (isInCart(id)){
             const carrito = cart.filter((obj)=>obj.id!==id)
@@ -45,7 +45,7 @@ import { createContext, useState } from "react"
     }
 
     const clear = ()=>{
-        console.log("clear");
+        //console.log("clear");
         setCart([]);
     }
 
