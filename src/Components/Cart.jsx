@@ -9,16 +9,18 @@ function Cart() {
   const total = cart.reduce((acum,item)=>acum+Number(item.price*item.cantidad),0)
 
   return (
-    <div className="max-w-[850px] mx-auto card-bordered border-accent rounded-xl p-4 shadow-xl m-8">
+    <div className="max-w-[850px] mx-auto card-bordered bg-white rounded-xl  shadow-md p-4 m-8">
       
       <h1 className="m-8 text-2xl">Detalle de la compra</h1>
 
       <div>
       {cart.map( (item,i) => 
-          <li className="list-none flex bg-slate-100 justify-around p-2 items-center my-2" key={i}>
-              <img className="w-28 bg-transparent" src={item.image} alt=""></img>
+          <li className="list-none flex bg-slate-100 justify-between py-2 px-16 items-center my-2" key={i}>
+              <div className="flex items-center">
+                <p>{item.cantidad} </p>
+                <img className="w-20 bg-transparent mx-4" src={item.image} alt=""></img>
+              </div>
               <p>{item.title} </p>
-              <p>{item.cantidad} </p>
               <p>$ {item.price*item.cantidad}</p>
               <button className="btn" onClick={()=>removeFromCart(item.id)}>Quitar</button>
           </li> 
@@ -33,12 +35,12 @@ function Cart() {
             </div>
           )
           : (<div className="w-full text-right">
-                <div className="flex items-center justify-end">
-                  <h2 className="text-2xl font-bold my-8">Total: $ {total}</h2>
-                  <ButtonToPage path="/pay" text="Pagar"></ButtonToPage>
-                </div>
-                <ButtonToPage path="/" text="seguir comprando"></ButtonToPage>
-            <button className="btn " onClick={()=>clear()}>Borrar todos</button>
+            <button className="btn mx-2" onClick={()=>clear()}>Quitar todos</button>
+            <h2 className="text-3xl font-bold border-b-2 mt-8 px-2">Total: $ {total}</h2>
+            <div className="flex items-center justify-end">
+              <ButtonToPage path="/" text="seguir comprando"></ButtonToPage>
+              <ButtonToPage path="/pay" text="Pagar"></ButtonToPage>
+            </div>
           </div>)}
 
     </div>

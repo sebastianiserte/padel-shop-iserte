@@ -9,13 +9,10 @@ function ItemDetailContainer() {
   /** variables y states*/
   const {id} = useParams();
   const [data, setData] = useState({});
-  // const [loading, setLoading] = useState(true);
 
   //Hook effect on mount con delay
   useEffect(()=>{
     
-    //Cambio los estador para solo mostrar el loader
-    // setLoading(true);
     setData([]);
 
     //Recupero datos del archivo json
@@ -44,18 +41,14 @@ function ItemDetailContainer() {
     getDoc(itemRef).then((snapshot)=>{
       if(snapshot.exists()){
         setData({id:snapshot.id, ...snapshot.data() });
-        // setLoading(false);
       }
     })
-
-      
   },[id]);
-  
   
   return (
 
      <div className="w-10/12 mx-auto min-h-[72vh]">
-      {/* pregutno por el id para saber que si tengo los datos para renderizar, sino no renderizo nada (no supe que era mejor si ""/null/undefined)*/}
+      {/* pregutno por el id para saber que si tengo los datos para renderizar}*/}
       {data.id ? <ItemDetail detail={data}/>:<GridLoader color={'#394e6a'} loading={true} size={15} css="display:flex;flex-wrap: wrap;position:fixed;top:50%;left: 48.3%;"/>}
       
     </div>
@@ -63,3 +56,4 @@ function ItemDetailContainer() {
   )
 }
 export default ItemDetailContainer
+

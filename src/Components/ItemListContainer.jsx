@@ -10,22 +10,11 @@ function ItemListContainer({greeting}) {
   /** variables */
   const {id} = useParams();
   const [data, setData] = useState([]);
-  // const [loading, setLoading] = useState(true);
 
   useEffect(()=>{
-    /**recupero el archivo con los datos de produtos 
-     * esta raro que despes de usar el Router me tome como que este archivo esté en otra ruta
-     * por ejemplo para el home "/" -> ./data/productos.json ok
-     *    categorias "/category/id" -> /category/id/data/productos.json no ok :S
-    */
+    /**recupero datos desde un archivo json*/
     // let ruta="data/productos.json";
     // id===undefined?ruta= ("./").concat(ruta):ruta= ("../../").concat(ruta);
-
-    //Cambio los estador para solo mostrar el loader
-    // setLoading(true);
-    //setData([]);
-
-    //Recupero datos del archivo json
     // const BackEndData = fetch(ruta, {
     //   headers: {
     //     'Accept': 'application/json',
@@ -41,7 +30,7 @@ function ItemListContainer({greeting}) {
     //     }
     //   });
 
-    // //Promise con Async
+    // Promise con Async para emular delay con serivicos
     // const promise = new Promise((res,rej)=>{
     //     setTimeout(()=>res(BackEndData),500);
     // });
@@ -52,13 +41,12 @@ function ItemListContainer({greeting}) {
     //   setLoading(false);
     // });
 
+    /** Datos desde el servicio firestore */
     setData([]);
     const db = getFirestore();
     const itemColection = collection(db,"items")
     getDocs(itemColection).then((snapshot)=>{
         
-        // setLoading(false);
-
         //Si la categoria del producto es undefined:
         //1. estoy en el inicio, entoces traigo todos los elementos diferentes de undefined
         //2. sino estoy en una categoria y filtro po la categoria.
@@ -69,7 +57,6 @@ function ItemListContainer({greeting}) {
           })
         )
     })
-
   },[id]);
   
   return (
