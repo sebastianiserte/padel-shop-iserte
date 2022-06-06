@@ -4,7 +4,7 @@ function ItemList({items}) {
 
     return (
     <div>
-        <ul className="grid grid-cols-4  gap-4">
+        <ul className="grid md:grid-cols-5  gap-4 items-center">
             { items.map( (d) => <Item prod={d} key={d.id}/> )}
         </ul>
     </div>

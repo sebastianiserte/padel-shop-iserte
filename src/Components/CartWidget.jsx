@@ -1,24 +1,18 @@
 import { useContext } from 'react';
 import { Link } from 'react-router-dom';
-import cartImg from '../assets/2x/carrito@2x.png';
+import cartImg from '../assets/bag.png';
 import { CartContext } from '../Context/CartContext';
 
 function CartWidget() {
 
-
-
   const {cart} = useContext(CartContext)
-
-  const total = cart.reduce((acum,item)=>
-      { console.log(cart)
-        return acum+Number(item.cantidad)},0)
+  const total = cart.reduce((acum,item)=> acum+Number(item.cantidad),0)
 
   return (
     <Link to="/cart">
-     <div className='bg-slate-50 rounded-full p-2 mx-24 w-fit relative border-2 border-green-700 border-solid'>
+     <div className='mr-2 md:mr-12 mb-2 p-2 w-14 md:w-fit relative border-4 border-white border-solid group hover:bg-slate-400'>
         <img className="max-h-[30px] z-10 " src={cartImg} alt="carrito"  />
-        {cart.length>0&&<div className='bg-red-300 rounded-full absolute w-6 h-6 right-[-8px] bottom-[-8px]'>{total}</div>}
-        
+        {cart.length>0&&<div className='bg-lime-400 border-white border-4 flex  items-center justify-center rounded-full font-bold absolute w-8 h-8 right-[-10px] bottom-[-10px] group-hover:bg-lime-500'>{total}</div>}
       </div>
     </Link>  
 

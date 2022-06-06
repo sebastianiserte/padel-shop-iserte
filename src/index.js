@@ -7,13 +7,13 @@ import { initializeApp } from "firebase/app";
 // import { getAnalytics } from "firebase/analytics";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBeDri7hluuFy5sB1i3NReAc4zqwcPy5xA",
-  authDomain: "padel-shop-coderhouse.firebaseapp.com",
-  projectId: "padel-shop-coderhouse",
-  storageBucket: "padel-shop-coderhouse.appspot.com",
-  messagingSenderId: "492040153085",
-  appId: "1:492040153085:web:637826193fb112b81ddb94",
-  measurementId: "G-0CG8554GDP"
+  apiKey: process.env.REACT_APP_APIKEY,
+  authDomain: process.env.REACT_APP_AUTHDOMAIN,
+  projectId: process.env.REACT_APP_PROJECTID,
+  storageBucket: process.env.REACT_APP_STORAGEBUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGINGSENDERID,
+  appId: process.env.REACT_APP_APPID,
+  measurementId: process.env.REACT_APP_MEASUREMENTID
 };
 
 // Initialize Firebase

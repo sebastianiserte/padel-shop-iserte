@@ -1,4 +1,4 @@
-import {  collection, getFirestore, addDoc  } from "firebase/firestore";
+import { addDoc, collection, doc, getFirestore, runTransaction  } from "firebase/firestore";
 import { useContext, useRef, useState } from "react";
 import { CartContext } from "../Context/CartContext";
 
@@ -6,12 +6,10 @@ function SendOrder() {
 
     const {cart,clear} = useContext(CartContext)
     const [id, setId] = useState("")
-
     const nameEl = useRef(null)
     const phoneEl = useRef(null)
     const emailEl = useRef(null)
-
-    const inputStyle = "border-2 border-solid border-fuchsia-700 rounded-md h-10 mb-4"
+    const inputStyle = "border-2 border-solid border-slate-300 bg-white rounded-md h-10 mb-4 hover:border-slate-400"
     const h1Style = "text-4xl my-8";
 
     const setOrderId = (id) => {
@@ -19,7 +17,7 @@ function SendOrder() {
             clear();
         }
 
-    const handleSubmit = (e)=>{
+    const handleSubmit = async (e)=>{
 
         e.preventDefault();
 
@@ -33,31 +31,42 @@ function SendOrder() {
             date: new Date().toString()
         }
 
-        console.log(order);
         const db = getFirestore();
         /***guarda la orden***/
         const ordersCollection = collection(db,"orders")
         const id = addDoc(ordersCollection,order)
             .then(({id}) => setOrderId(id))
 
-        /**Actualizar stocks de items
-        //Recupero los Documenstos.**/              
-        // db.collection("items")
-        //     .where(documentId(),"in",cart.map((c)=>c.id))
-        //     .update({stock:cart.stock-cart.cantidad})
-        
+        /**Actualizar stocks de items.**/              
+        cart.forEach(async (item)=>{
+
+            const sfDocRef = doc(db,"items",item.id)
+
+            try {
+                await runTransaction(db, async (transaction) => {
+                  const sfDoc = await transaction.get(sfDocRef);
+                  if (!sfDoc.exists()) {
+                    throw "Document does not exist!";
+                  }
+              
+                  var nuevoStock = Number(item.stock-item.cantidad);
+                  transaction.update(sfDocRef, { stock: nuevoStock });
+                });
+              } catch (e) {
+                console.log("Transaction failed: ", e);
+              }
+        })
     }
 
   return (
-    <div className="min-h-[72vh]">
-        
-
+    <div className="min-h-[68vh]">
+      
         {(cart.length===0)?
-            <>
+            <div className="max-w-[850px] mx-auto card-bordered  rounded-xl p-4 shadow-md bg-white m-8">
             <h1 className={h1Style}>Tu pedido ha sido enviado con exito!</h1>
-            <p>Este el código para hacer seguimiento de esta compra es: </p>
+            <p>Este código es para hacer seguimiento de tu compra: </p>
             <p className="text-2xl font-bold m-4 text-purple-700 bg-slate-200 p-4 w-fit mx-auto rounded-md">{id}</p>
-            </>
+            </div>
             :
             <>
             <h1 className={h1Style}>Enviar pedido</h1>
@@ -72,11 +81,6 @@ function SendOrder() {
             </form>
             </>
         }
-
-
-
-        {/* {(cart.length===0)?<h1>{id}</h1>: */}
-        {/* <button className="btn" onClick={()=>salvar()}>Salvar</button> }    */}
     </div>
     
   )
